@@ -4,5 +4,5 @@ services: docker
 
 before_install:
   - docker-compose exec --env 'RAILS_ENV=test' wed rails db:create
-  - docker-compose exec --env 'RAILS_ENV=test' wed rails db:migrate
-  - docker-compose exec --env 'RAILS_ENV=test' wed rails test
+  - docker-compose exec --env 'RAILS_ENV=test' wed rails db:migrate 
+  - docker-compose exec --env 'RAILS_ENV=test' wed rails test 
